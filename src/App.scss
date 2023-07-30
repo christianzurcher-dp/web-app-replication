@@ -1,0 +1,117 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+.App {
+  display: flex;
+  .side-bar-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #4b89ca;
+    height: 100%;
+    width: 20vw;
+
+    .logo-container {
+      display: flex;
+      margin: 50px 20px;
+      height: 16vw;
+      background-color: white;
+      border: 1px solid black;
+      align-items: center;
+      justify-content: center;
+    }
+    .buttons {
+      margin-top: 40px;
+      margin-bottom: 180px;
+
+      display: flex;
+      flex-direction: column;
+      button {
+        height: 3.5vw;
+      }
+    }
+  }
+  .page-content {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    .header-container {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        background-color: white;
+      }
+      .main-image {
+        height: 17vw;
+        margin: 50px 28vw;
+      }
+      .header,
+      .sub-header {
+        height: 3vw;
+        margin: 0px 10vw 10px;
+      }
+    }
+    .main-body-container {
+      .main-content,
+      .content-container,
+      .image-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        background-color: white;
+      }
+      .main-content {
+        height: 15vw;
+        margin: 20px 4px 10px 20px;
+      }
+      .middle-content {
+        display: flex;
+        justify-content: center;
+        .content-container,
+        .image-container {
+          height: 15vw;
+          width: 100%;
+          margin: 10px 5px 10px 20px;
+        }
+      }
+      button {
+        background-color: white;
+        border-radius: 7px;
+        height: 3vw;
+        width: 10vw;
+        margin-top: 40px;
+      }
+    }
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      div {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .icon-container {
+        align-self: flex-end;
+        height: 6vw;
+        width: 15vw;
+        margin: 7.5vw 10px 3vw 0px;
+      }
+      .copyright {
+        align-self: center;
+        height: 6vw;
+        width: 15vw;
+      }
+    }
+  }
+}
